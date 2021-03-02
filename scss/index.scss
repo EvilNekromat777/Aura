@@ -1,0 +1,248 @@
+@font-face {
+	font-family: "Montserrat-Light";
+	src: url("../fonts/Montserrat-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+	}
+
+	@font-face {
+	font-family: "Montserrat-Medium";
+	src: url("../fonts/Montserrat-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+	}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+input::-ms-clear {
+	display: none;
+}
+:focus,
+:active {
+    outline: none;
+}
+.mainform {
+	background: url('../images/mainform/bg.png') no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	&__logo{
+		margin: 0px 0px 55px 0px;
+	}
+	&__body {
+		display: flex;
+		padding: 0px 60px 0px 120px;
+	}
+
+	&__plashka {
+		background: url('../images/mainform/plashka.png') no-repeat;
+		height: 751px;
+		background-size: cover;
+		width: 278px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 0px 0px 220px 0px;
+	}
+
+	&__plashka-title {
+		color: #F7F7F7;
+		text-align: center;
+		background: url('../images/mainform/plashka-bg.png') no-repeat;
+		background-size: cover;
+		height: 103px;
+		position: relative;
+		margin: 96px 0px 0px 0px;
+	}
+	&__title{
+		font-family: "Montserrat-Light";
+		//line-height: 140%;
+		letter-spacing: 0.01em;
+		font-weight: 300;
+		font-size: 68px;
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		top: -10px;
+		left: 6px;
+	}
+	&__subtitle{
+		font-family: "Montserrat-Medium";
+		line-height: 140%;
+		letter-spacing: 0.01em;
+		font-weight: 500;
+		font-size: 29px;
+		padding: 34px 0px 0px 0px;
+	}
+	&__plashka-info {
+	}
+	&__aura-logo{
+		margin: 0px auto 0px;
+		max-width: 185px;
+		p{
+			font-family: "Montserrat-Medium";
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 130%;
+			color: #FFFFFF;
+			padding: 0;
+			margin: 5px 0px 0px 0px;
+		}
+	}
+	&__hansa-logo{
+		margin: 65px auto 0px;
+		text-align: center;
+	}
+	&__form{
+		width: 256px;
+		height: 263px;
+		margin: 377px 0px 0px 194px;
+	}
+	&__form-title{
+		font-family: "Montserrat-Medium";
+		font-weight: 500;
+		font-size: 26px;
+		line-height: 140%;
+		letter-spacing: 0.01em;
+		color: #807965;
+		padding: 0px;
+		margin: 0;
+	}
+	&__form-adress{
+		font-family: "Montserrat-Medium";
+		font-weight: 500;
+		font-size: 25px;
+		line-height: 140%;
+		letter-spacing: 0.0em;
+		color: #F7F7F7;
+		margin: 10px 0px 0px 1px;
+		padding: 0;
+	}
+}
+.container {
+	max-width: 1470px;
+	padding: 0px 15px 0px 0px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+
+.form {
+	&__error{
+		color: black;
+		font-family: "Montserrat-Medium";
+		font-weight: 500;
+		font-size: 8px;
+
+	}
+	&__fieldset {
+		border:0;
+		padding: 0px 0px 0px 0px;
+
+	}
+
+	&__input {
+		width: 248px;
+		height: 48px;
+		background: rgba(219, 219, 219, 0.7);
+		border: 1px solid #C1B49C;
+		box-sizing: border-box;
+		//margin: 16px 0px 0px 0px;
+		margin: 16px 0px 0px 0px;
+
+		&_name {
+		}
+
+		&_tel {
+			border:0;
+		}
+	}
+
+	&__error {
+	}
+}
+.button {
+	width: 248px;
+	height: 48px;
+	background: #807965;
+	border: 1px solid #807965;
+	box-sizing: border-box;
+	font-family: "Montserrat-Medium";
+	font-weight: 500;
+	font-size: 15px;
+	color: #FFFFFF;
+	margin: 16px 0px 0px 2px;
+	text-align: center;
+}
+
+::-webkit-input-placeholder {
+	font-family: "Montserrat-Medium";
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 170%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #807965;
+}
+::-moz-placeholder          {
+	font-family: "Montserrat-Medium";
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 170%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #807965;
+}/* Firefox 19+ */
+:-moz-placeholder           {
+	font-family: "Montserrat-Medium";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 170%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #807965;
+}/* Firefox 18- */
+:-ms-input-placeholder      {
+	font-family: "Montserrat-Medium";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 170%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #807965;
+}
+
+//=================================================>
+
+@media (max-width: 950px){
+	.mainform{
+		&__form{
+			margin: 177px 0px 0px 94px;
+		}
+		&__body {
+			padding: 0px 60px 0px 60px;
+		}
+	}
+}
+//@media (max-width: 767px){
+//	.mainform{
+//		&__form{
+//			margin: 177px 0px 0px 94px;
+//		}
+//		&__body {
+//			padding: 0px 60px 0px 60px;
+//		}
+//	}
+//}
